@@ -33,7 +33,7 @@ endif
 TARGET_OTA_ASSERT_DEVICE := rolex,riva,rova
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_rova
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_rova
 TARGET_RECOVERY_DEVICE_MODULES := libinit_rova
 
 # Kernel
