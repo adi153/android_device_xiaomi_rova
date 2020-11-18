@@ -7,6 +7,10 @@ on property:ro.ir=led
     mount none /vendor/lib/hw/led/consumerir.default.so /vendor/lib/hw/consumerir.default.so bind
     mount none /vendor/lib64/hw/led/consumerir.default.so /vendor/lib64/hw/consumerir.default.so bind
     restart vendor.ir-hal-1-0
+    # RGB light hal for rolex
+    mount none /vendor/lib/hw/led/lights.msm8937.so /vendor/lib/hw/lights.msm8937.so bind
+    mount none /vendor/lib64/hw/led/lights.msm8937.so /vendor/lib64/hw/lights.msm8937.so bind
+    restart vendor.light-hal-2-0
 
 on property:ro.ir=spidev
     mount none /vendor/lib/hw/spidev/consumerir.default.so /vendor/lib/hw/consumerir.default.so bind

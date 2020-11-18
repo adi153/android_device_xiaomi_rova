@@ -1936,3 +1936,7 @@ vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3b.xml|814bc2ee08678f07a2
 # VNDK - from latest system
 lib/libbinder.so:vendor/lib/vndk/libbinder.so
 lib/libcutils.so:vendor/lib/vndk-sp/libcutils.so
+
+# RGB Lights HAL - from CAF - latest
+vendor/lib/hw/led/lights.msm8937.so|2545a5d6807cdacffff16ff501c55aa6a4ed9762
+vendor/lib64/hw/led/lights.msm8937.so|8070221253d4d7e64581e9fe87949722a70a92d7
