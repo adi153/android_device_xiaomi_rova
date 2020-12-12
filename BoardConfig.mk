@@ -32,6 +32,10 @@ endif
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := rolex,riva,rova
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_rova
+TARGET_RECOVERY_DEVICE_MODULES := libinit_rova
+
 # Kernel
 TARGET_KERNEL_CONFIG := rova_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/rova-$(TARGET_KERNEL_VERSION)
