@@ -46,6 +46,24 @@ int property_set(const char *key, const char *value) {
 	    return __system_property_set(key, value);
 }
 
+void init_target_properties()
+{
+    std::ifstream fin;
+    std::string buf;
+    fin.open("/proc/cmdline");
+    while (std::getline(fin, buf, ' '))
+      if (buf.find("board_id") != std::string::npos)
+          break;
+    fin.close();
+
+    if (buf.find("S88503") != std::string::npos) {
+        property_set("ro.product.model", "Redmi 4A");
+    } else {
+        property_set("ro.product.model", "Redmi 5A");
+    }
+}
+
 void vendor_load_properties()
 {
+    init_target_properties();
 }
