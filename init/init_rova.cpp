@@ -68,9 +68,9 @@ void init_target_properties()
     fin.close();
 
     if (buf.find("S88503") != std::string::npos) {
-        property_set("ro.product.model", "Redmi 4A");
+        property_override("ro.product.model", "Redmi 4A");
     } else {
-        property_set("ro.product.model", "Redmi 5A");
+        property_override("ro.product.model", "Redmi 5A");
     }
 }
 
