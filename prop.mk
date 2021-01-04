@@ -1,3 +1,8 @@
+# ADB
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.audio.fluence.speaker=true \

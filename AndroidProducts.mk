@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rova.mk
+    $(LOCAL_DIR)/p404_rova.mk
